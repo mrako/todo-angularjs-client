@@ -1,29 +1,19 @@
 {
-  "name"         : "todo-app",
+  "name"         : "todo-angularjs-client",
   "version"      : "0.0.0",
-  "description"  : "a nodejs and angularjs example using api",
+  "description"  : "an angularjs example using external api",
   "homepage"     : "",
   "author"       : {
-    "name": "",
-    "email": ""
+    "name": "Marko Klemetti",
+    "email": "marko.klemetti@gmail.com"
   },
   "repository"   : {
     "type": "git",
-    "url": ""
-  },
-  "main"         : "server.js",
-  "dependencies" : {
-    "express"    : "latest",
-    "body-parser": "latest",
-    "morgan": "latest",
-    "mongoose"   : "latest"
+    "url": "https://github.com/mrako/todo-angularjs-client"
   },
   "devDependencies" : {
     "grunt": "latest",
-    "grunt-express-server": "latest",
-    "grunt-contrib-watch": "latest",
     "grunt-contrib-jshint": "latest",
-    "grunt-open": "latest",
 
     "karma": "latest",
     "grunt-karma": "latest",

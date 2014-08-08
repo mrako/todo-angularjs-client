@@ -5,14 +5,14 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     files: [
-      'public/components/angular/angular.js',
-      'public/components/angular-route/angular-route.js',
-      'public/components/angular-xeditable/dist/js/xeditable.js',
-      'public/components/angular-route/angular-route.js',
-      'public/components/angular-mocks/angular-mocks.js',
-      'public/js/app.js',
-      'public/js/services/todos_service.js',
-      'public/js/controllers/todos_controller.js',
+      'bower_components/angular/angular.js',
+      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-xeditable/dist/js/xeditable.js',
+      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'app/scripts/app.js',
+      'app/scripts/services/todos_service.js',
+      'app/scripts/controllers/todos_controller.js',
       'test/spec/**/*.js'
     ],
 
