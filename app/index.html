@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body ng-app="todoApp">
+<body>
   <div class="container">
     <div class="header">
       <ul class="nav nav-pills pull-right">
@@ -24,13 +24,6 @@
       <h3 class="text-muted">Todo App</h3>
     </div>
 
-    <div id="todos" ng-controller="TodosController">
-      <div class="jumbotron">
-        <h3>Todos: {{ todos.length }}
-        </h3>
-      </div>
-    </div>
-
     <div class="footer">
       <p>&copy; Company 2014</p>
     </div>
@@ -38,10 +31,6 @@
 
   <script src="../bower_components/angular/angular.min.js"></script>
   <script src="../bower_components/angular-route/angular-route.min.js"></script>
-
-  <script src="scripts/app.js"></script>
-  <script src="scripts/controllers/todos_controller.js"></script>
-  <script src="scripts/services/todos_service.js"></script>
 </body>
 
 </html>
