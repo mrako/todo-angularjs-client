@@ -11,8 +11,8 @@ module.exports = function(config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'app/scripts/app.js',
-      'app/scripts/services/todos_service.js',
-      'app/scripts/controllers/todos_controller.js',
+      'app/scripts/services/todos.js',
+      'app/scripts/controllers/todos.js',
       'test/spec/**/*.js'
     ],
 

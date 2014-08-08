@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: TodosController', function () {
+describe('Controller: TodosCtrl', function () {
 
   var TodosController,
       scope,
@@ -13,7 +13,7 @@ describe('Controller: TodosController', function () {
     todosService = {
       list: jasmine.createSpy('list').andReturn({success: function(fn) {fn(todos);}})
     };
-    TodosController = $controller('TodosController', {
+    TodosController = $controller('TodosCtrl', {
       $scope: scope,
       todosService: todosService
     });    
