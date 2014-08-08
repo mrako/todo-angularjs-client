@@ -1,4 +1,4 @@
-angular.module('todoApp').controller('TodosCtrl', function($scope) {
+angular.module('todoApp').controller('TodosCtrl', function($scope, todosService) {
 
   todosService.list()
     .success(function(data) {
