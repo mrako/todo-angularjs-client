@@ -6,6 +6,9 @@ angular.module('todoApp').factory('todosService', function ($http) {
     return {
         list : function() {
             return $http.get(apiHost + '/todos');
+        },
+        create : function(data) {
+            return $http.post(apiHost + '/todos', data);
         }
     };
 });

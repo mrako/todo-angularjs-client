@@ -8,9 +8,10 @@ angular.module('todoApp').controller('TodosCtrl', function($scope, todosService)
     });
 
   $scope.save = function() {
-    $scope.todos.push({
-      "text": $scope.formData.text
-    });
+    todosService.create($scope.formData)
+      .success(function(data) {
+        $scope.todos = data;
+      });
   };
 
 });
