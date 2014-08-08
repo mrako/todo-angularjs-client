@@ -14,15 +14,23 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body ng-app="todoApp">
   <div class="container">
     <div class="header">
       <h3 class="text-muted">Todo App</h3>
     </div>
   </div>
 
+  <div ng-controller="TodosCtrl">
+    <div class="jumbotron">
+      <h3>Todos: {{ todos.length }}</h3>
+    </div>
+  </div>
+
   <script src="../bower_components/angular/angular.min.js"></script>
-  <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/todos.js"></script>
 </body>
 
 </html>

@@ -1,24 +1,24 @@
 {
-  "name"         : "todo-angularjs-client",
-  "version"      : "0.0.0",
-  "description"  : "an angularjs example using external api",
-  "homepage"     : "",
-  "author"       : {
+  "name": "todo-angularjs-client",
+  "version": "0.0.0",
+  "description": "an angularjs example using external api",
+  "homepage": "",
+  "author": {
     "name": "Marko Klemetti",
     "email": "marko.klemetti@gmail.com"
   },
-  "repository"   : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/mrako/todo-angularjs-client"
   },
-  "devDependencies" : {
+  "devDependencies": {
     "grunt": "latest",
     "grunt-contrib-jshint": "latest",
-
     "karma": "latest",
     "grunt-karma": "latest",
     "karma-spec-reporter": "latest",
     "karma-jasmine": "latest",
-    "karma-phantomjs-launcher": "latest"
+    "karma-phantomjs-launcher": "latest",
+    "bower": "latest"
   }
 }
