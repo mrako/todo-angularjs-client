@@ -7,4 +7,10 @@ angular.module('todoApp').controller('TodosCtrl', function($scope, todosService)
       $scope.todos = data;
     });
 
+  $scope.save = function() {
+    $scope.todos.push({
+      "text": $scope.formData.text
+    });
+  };
+
 });
