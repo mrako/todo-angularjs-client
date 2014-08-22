@@ -4,11 +4,11 @@
   "dependencies": {
     "angular": "1.2.18",
     "angular-route": "latest",
-    "angular-xeditable": "latest",
     "bootstrap": "latest",
     "fontawesome": "latest"
   },
   "devDependencies": {
     "angular-mocks": "latest"
-  }
+  },
+  "appPath": "app"
 }

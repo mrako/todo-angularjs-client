@@ -5,7 +5,7 @@ describe('Controller: TodosCtrl', function () {
   var TodosController,
       scope,
       todosService,
-      todos = [{_id: 1, text: "todo item", done: false}];
+      todos = [{_id: 1, text: 'todo item', done: false}];
 
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
