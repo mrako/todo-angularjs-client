@@ -8,10 +8,13 @@
 
   <title>Todo App</title>
 
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- endbuild -->
 </head>
 
 <body ng-app="todoApp">
@@ -30,7 +33,7 @@
           <div class="form-group">
             <input type="text" ng-model="formData.text" class="form-control" placeholder="New todo item">
           </div>
-          <button type="submit" class="btn btn-info" />Create</button>
+          <button type="submit" class="btn btn-info" />{{ submit || "Create" }}</button>
         </form>
       </div>
 
@@ -49,7 +52,7 @@
                 <input type="checkbox" ng-model="todo.done" ng-change="update(todo)" />
               </td>
               <td class="col-md-10">
-                <a href="#" editable-text="todo.text" onbeforesave="updateData(todo, $data)">{{ todo.text || "empty" }}</a>
+                <a href="" ng-click="edit(todo._id)">{{ todo.text || "empty" }}</a>
               </td>
               <td class="col-md-1">
                 <a href="" ng-click="delete(todo._id)">delete</a>
@@ -61,12 +64,14 @@
     </div>
   </div>
 
-  <script src="../bower_components/angular/angular.min.js"></script>
-  <script src="../bower_components/angular-route/angular-route.min.js"></script>
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
 
   <script src="scripts/app.js"></script>
   <script src="scripts/services/todos.js"></script>
   <script src="scripts/controllers/todos.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
